@@ -11,7 +11,6 @@
 
 #define LeftMargin 5 //左侧按钮整体距离导航栏左侧的距离
 #define RightMargin 5 //右侧按钮整体距离导航栏右侧的距离
-#define isIphoneX 0
 
 #define KMPFNavigationBarDefaultBackColor COLOR_WITH_HEX(0xEDEDED)
 

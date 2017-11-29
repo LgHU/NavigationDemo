@@ -34,10 +34,10 @@ static void *NavigationBarTypeKey = @"NavigationBarTypeKey";
 
 - (CGFloat)navigationBarHeight {
     if (self.isNavigationBarShowing) {
-        return isIphoneX ? 88. : 64;
+        return [UIApplication sharedApplication].statusBarFrame.size.height + 44.;
     }
     
-    return isIphoneX ? 44. : 20.;
+    return [UIApplication sharedApplication].statusBarFrame.size.height;
 }
 
 - (void)hiddenNavigationBar:(BOOL)hidden {
@@ -99,14 +99,12 @@ static void *NavigationBarTypeKey = @"NavigationBarTypeKey";
 - (void)initNavigationBar:(BOOL)needNavigationBar {
     if (needNavigationBar) {
         if (!self.navigationBar) {
-            UIView *view = [[UIView alloc]init];
-            view.backgroundColor = [UIColor blackColor];
-            MPFNavigationCenterItem *item = [MPFNavigationCenterItem navigationCenterItemView:view size:CGSizeMake(100, 30)];
+            MPFNavigationCenterItem *item = [MPFNavigationCenterItem navigationCenterItemView:[[UIView alloc]init] size:CGSizeZero];
             self.navigationBar = [[MPFNavigationBarView alloc]initWithCenterNavigationItem:item];
             [self.view addSubview:self.navigationBar];
             [self.navigationBar mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.left.right.top.equalTo(self.view);
-                make.height.mas_equalTo(isIphoneX ? 88.:64.);
+                make.height.mas_equalTo([UIApplication sharedApplication].statusBarFrame.size.height + 44.);
             }];
             
             //设置默认的导航栏标题视图

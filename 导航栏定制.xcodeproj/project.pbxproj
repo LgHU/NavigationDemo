@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB4B22031FCE4F75008FC60E /* UIViewController+UINavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4B21FE1FCE4F74008FC60E /* UIViewController+UINavigation.m */; };
+		CB4B22041FCE4F75008FC60E /* MPFNavigationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4B21FF1FCE4F74008FC60E /* MPFNavigationBarView.m */; };
+		CB4B22051FCE4F75008FC60E /* MPFNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4B22011FCE4F75008FC60E /* MPFNavigationItem.m */; };
 		CB9B11E61FC40D7900FD8E6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9B11E51FC40D7900FD8E6E /* AppDelegate.m */; };
 		CB9B11E91FC40D7900FD8E6E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9B11E81FC40D7900FD8E6E /* ViewController.m */; };
 		CB9B11EC1FC40D7900FD8E6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9B11EA1FC40D7900FD8E6E /* Main.storyboard */; };
@@ -15,15 +18,18 @@
 		CB9B11F41FC40D7900FD8E6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9B11F31FC40D7900FD8E6E /* main.m */; };
 		CB9B11FC1FC40DE300FD8E6E /* BaseNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9B11FB1FC40DE300FD8E6E /* BaseNaviController.m */; };
 		CBBC6B701FC51B5100B63249 /* PushedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBC6B6F1FC51B5100B63249 /* PushedVC.m */; };
-		CBBF91001FCD0A52000619CC /* MPFNavigationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBF90FA1FCD0A52000619CC /* MPFNavigationBarView.m */; };
-		CBBF91011FCD0A52000619CC /* UIViewController+UINavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBF90FB1FCD0A52000619CC /* UIViewController+UINavigation.m */; };
-		CBBF91021FCD0A52000619CC /* MPFNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBF90FC1FCD0A52000619CC /* MPFNavigationItem.m */; };
 		E1E17DC81D9AE847F045D019 /* libPods-导航栏定制.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBEA7CC02D000DFDFDB6272E /* libPods-导航栏定制.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6936315D1601283B2A2EDEB7 /* Pods-导航栏定制.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-导航栏定制.debug.xcconfig"; path = "Pods/Target Support Files/Pods-导航栏定制/Pods-导航栏定制.debug.xcconfig"; sourceTree = "<group>"; };
 		9AD17269F418FDFC451B81BD /* Pods-导航栏定制.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-导航栏定制.release.xcconfig"; path = "Pods/Target Support Files/Pods-导航栏定制/Pods-导航栏定制.release.xcconfig"; sourceTree = "<group>"; };
+		CB4B21FD1FCE4F74008FC60E /* UIViewController+UINavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UINavigation.h"; sourceTree = "<group>"; };
+		CB4B21FE1FCE4F74008FC60E /* UIViewController+UINavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UINavigation.m"; sourceTree = "<group>"; };
+		CB4B21FF1FCE4F74008FC60E /* MPFNavigationBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPFNavigationBarView.m; sourceTree = "<group>"; };
+		CB4B22001FCE4F74008FC60E /* MPFNavigationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPFNavigationItem.h; sourceTree = "<group>"; };
+		CB4B22011FCE4F75008FC60E /* MPFNavigationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPFNavigationItem.m; sourceTree = "<group>"; };
+		CB4B22021FCE4F75008FC60E /* MPFNavigationBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPFNavigationBarView.h; sourceTree = "<group>"; };
 		CB9B11E11FC40D7900FD8E6E /* 导航栏定制.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "导航栏定制.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9B11E41FC40D7900FD8E6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CB9B11E51FC40D7900FD8E6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -38,12 +44,6 @@
 		CB9B11FB1FC40DE300FD8E6E /* BaseNaviController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNaviController.m; sourceTree = "<group>"; };
 		CBBC6B6E1FC51B5100B63249 /* PushedVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushedVC.h; sourceTree = "<group>"; };
 		CBBC6B6F1FC51B5100B63249 /* PushedVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushedVC.m; sourceTree = "<group>"; };
-		CBBF90FA1FCD0A52000619CC /* MPFNavigationBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPFNavigationBarView.m; sourceTree = "<group>"; };
-		CBBF90FB1FCD0A52000619CC /* UIViewController+UINavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UINavigation.m"; sourceTree = "<group>"; };
-		CBBF90FC1FCD0A52000619CC /* MPFNavigationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPFNavigationItem.m; sourceTree = "<group>"; };
-		CBBF90FD1FCD0A52000619CC /* MPFNavigationBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPFNavigationBarView.h; sourceTree = "<group>"; };
-		CBBF90FE1FCD0A52000619CC /* UIViewController+UINavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UINavigation.h"; sourceTree = "<group>"; };
-		CBBF90FF1FCD0A52000619CC /* MPFNavigationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPFNavigationItem.h; sourceTree = "<group>"; };
 		EBEA7CC02D000DFDFDB6272E /* libPods-导航栏定制.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-导航栏定制.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -59,10 +59,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB4B21F31FCE4F4B008FC60E /* MPCNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				CB4B22021FCE4F75008FC60E /* MPFNavigationBarView.h */,
+				CB4B21FF1FCE4F74008FC60E /* MPFNavigationBarView.m */,
+				CB4B22001FCE4F74008FC60E /* MPFNavigationItem.h */,
+				CB4B22011FCE4F75008FC60E /* MPFNavigationItem.m */,
+				CB4B21FD1FCE4F74008FC60E /* UIViewController+UINavigation.h */,
+				CB4B21FE1FCE4F74008FC60E /* UIViewController+UINavigation.m */,
+			);
+			path = MPCNavigationBar;
+			sourceTree = "<group>";
+		};
 		CB9B11D81FC40D7900FD8E6E = {
 			isa = PBXGroup;
 			children = (
-				CBBF90F91FCD0A52000619CC /* MPCNavigationBar */,
+				CB4B21F31FCE4F4B008FC60E /* MPCNavigationBar */,
 				CB9B11E31FC40D7900FD8E6E /* 导航栏定制 */,
 				CB9B11E21FC40D7900FD8E6E /* Products */,
 				F49911B4835CBB8F200533EE /* Pods */,
@@ -96,19 +109,6 @@
 				CBBC6B6F1FC51B5100B63249 /* PushedVC.m */,
 			);
 			path = "导航栏定制";
-			sourceTree = "<group>";
-		};
-		CBBF90F91FCD0A52000619CC /* MPCNavigationBar */ = {
-			isa = PBXGroup;
-			children = (
-				CBBF90FA1FCD0A52000619CC /* MPFNavigationBarView.m */,
-				CBBF90FB1FCD0A52000619CC /* UIViewController+UINavigation.m */,
-				CBBF90FC1FCD0A52000619CC /* MPFNavigationItem.m */,
-				CBBF90FD1FCD0A52000619CC /* MPFNavigationBarView.h */,
-				CBBF90FE1FCD0A52000619CC /* UIViewController+UINavigation.h */,
-				CBBF90FF1FCD0A52000619CC /* MPFNavigationItem.h */,
-			);
-			path = MPCNavigationBar;
 			sourceTree = "<group>";
 		};
 		F3DE0DABB962B141A4A15FD5 /* Frameworks */ = {
@@ -253,14 +253,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBBF91021FCD0A52000619CC /* MPFNavigationItem.m in Sources */,
+				CB4B22051FCE4F75008FC60E /* MPFNavigationItem.m in Sources */,
+				CB4B22031FCE4F75008FC60E /* UIViewController+UINavigation.m in Sources */,
+				CB4B22041FCE4F75008FC60E /* MPFNavigationBarView.m in Sources */,
 				CB9B11FC1FC40DE300FD8E6E /* BaseNaviController.m in Sources */,
 				CBBC6B701FC51B5100B63249 /* PushedVC.m in Sources */,
 				CB9B11E91FC40D7900FD8E6E /* ViewController.m in Sources */,
 				CB9B11F41FC40D7900FD8E6E /* main.m in Sources */,
 				CB9B11E61FC40D7900FD8E6E /* AppDelegate.m in Sources */,
-				CBBF91011FCD0A52000619CC /* UIViewController+UINavigation.m in Sources */,
-				CBBF91001FCD0A52000619CC /* MPFNavigationBarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

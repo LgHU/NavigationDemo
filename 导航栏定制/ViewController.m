@@ -24,9 +24,9 @@
     self.view.backgroundColor = [UIColor lightGrayColor];
     
     UIView *view = [UIView new];
-    view.frame = CGRectMake(100, 0, 300, 40);
+    view.frame = CGRectMake(100, 0, [UIScreen mainScreen].bounds.size.width, 40);
     view.backgroundColor = [UIColor redColor];
-    MPFNavigationCenterItem *item = [MPFNavigationCenterItem navigationCenterItemView:view size:CGSizeMake(300, 40)];
+    MPFNavigationCenterItem *item = [MPFNavigationCenterItem navigationCenterItemView:view size:CGSizeMake([UIScreen mainScreen].bounds.size.width, 40)];
     [self setCustomNavigationTitle:item];
     
     PushedVC *pushVC = [[PushedVC alloc]init];

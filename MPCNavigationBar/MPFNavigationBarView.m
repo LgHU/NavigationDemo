@@ -99,7 +99,7 @@
         make.edges.equalTo(self);
     }];
     
-    CGFloat marginTop = isIphoneX ? 44.: 20.;
+    CGFloat marginTop = [UIApplication sharedApplication].statusBarFrame.size.height;
     [self.viewLeft mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self).with.offset(LeftMargin);
         make.top.equalTo(self).with.offset(marginTop);;
@@ -140,7 +140,10 @@
         [self addSubview:self.viewCenter];
     }
     
-    CGFloat marginTop = isIphoneX ? 44.: 20.;
+    [self bringSubviewToFront:self.viewLeft];
+    [self bringSubviewToFront:self.viewRight];
+    
+    CGFloat marginTop = [UIApplication sharedApplication].statusBarFrame.size.height;
     [self.viewCenter mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self);
         make.centerY.equalTo(self).with.offset(marginTop/2.0);
@@ -160,7 +163,7 @@
  @param item 对象
  */
 - (void)layoutLeftItems:(NSInteger)index andView:(UIView*)view item:(MPFNavigationItem*)item{
-    CGFloat marginTop = isIphoneX ? 44.: 20.;
+    CGFloat marginTop = [UIApplication sharedApplication].statusBarFrame.size.height;
     if (index == 0) {
         [view mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.viewLeft);
@@ -201,7 +204,7 @@
  @param item 对象
  */
 - (void)layoutRightItems:(NSInteger)index andView:(UIView*)view item:(MPFNavigationItem*)item{
-    CGFloat marginTop = isIphoneX ? 44.: 20.;
+    CGFloat marginTop = [UIApplication sharedApplication].statusBarFrame.size.height;
     if (index == 0) {
         [view mas_makeConstraints:^(MASConstraintMaker *make) {
             make.right.equalTo(self.viewRight);
